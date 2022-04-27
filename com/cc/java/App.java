@@ -28,13 +28,13 @@ public class App {
         output("1. Element: " + carMakers.get(0));
         output("Letztes Element: " + carMakers.get(carMakers.size()  - 1));
 
-        output("");
+        output(" ");
         output("-------- Iteration ----------");
 
         for (int i = 0; i < carMakers.size(); i++){
             System.out.print(carMakers.get(i) + " ");
         }
-        output("");
+        output(" ");
         output("-------- Iteration 2 ----------");
 
         for (String element : carMakers){
@@ -47,12 +47,22 @@ public class App {
         carMakers.set(1,"MB");
         output("AL: " + carMakers);
 
-        output("");
+        output(" ");
         output("-------- Sortierung ----------");
 
         Collections.sort(carMakers);
         output("Al: " + carMakers);
+        output("1. Element: " + carMakers.get(0));
 
+        //Daten entfernen (JS --> pop(); J --> remove )
+        carMakers.remove(0);
+        output("AL: " + carMakers);
+        carMakers.remove(carMakers.size() -1);
+        output("AL: " + carMakers);
+
+        //AL leeren ...
+        carMakers.clear();
+        output("AL: " + carMakers);
 
 
 
